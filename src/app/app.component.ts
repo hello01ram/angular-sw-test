@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ServiceWorkerService } from './services/sw.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-sw-test';
+  public constructor(private serviceWorker: ServiceWorkerService) {
+    
+  }
 }
